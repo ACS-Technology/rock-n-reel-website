@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rock 'N Reel</title>
   <meta name="description" content="Rock 'N Reel — Fish. Riff. Repeat. Something ridiculous is coming.">
-  <meta name="theme-color" content="#0b0b0b">
+  <meta name="theme-color" content="#000000">
 
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
   <link rel="shortcut icon" href="rock-n-reel-favicon.ico">
@@ -14,10 +14,15 @@
 </head>
 <body>
   <main class="hero">
-    <img class="logo" src="assets/rock-n-reel-logo.png" alt="Rock 'N Reel">
-    <h1>Rock ’N Reel</h1>
-    <p class="tagline">Fish. Riff. Repeat.</p>
-    <p class="coming">Something ridiculous is coming. 🎸🎣</p>
+    <section class="copy" aria-label="Rock 'N Reel intro">
+      <h1>Rock ’N Reel</h1>
+      <p class="tagline">Fish. Riff. Repeat.</p>
+      <p class="coming">Something ridiculous is coming. <span aria-hidden="true">🎸 🎣</span></p>
+    </section>
+
+    <section class="art" aria-label="Rock 'N Reel logo">
+      <img class="logo" src="assets/rock-n-reel-logo.png" alt="Rock 'N Reel fish playing guitar logo">
+    </section>
   </main>
 </body>
 </html>
