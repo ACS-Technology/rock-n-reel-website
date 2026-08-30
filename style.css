@@ -241,6 +241,7 @@ h1::after {
 }
 
 .signup-form .formkit-submit {
+  position: relative;
   min-height: 42px;
   margin: 0;
   padding: 0 18px;
@@ -255,6 +256,39 @@ h1::after {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.signup-form .formkit-spinner {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.signup-form .formkit-spinner div {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: signup-pulse 900ms ease-in-out infinite alternate;
+}
+
+.signup-form .formkit-spinner div:nth-child(2) { animation-delay: 150ms; }
+.signup-form .formkit-spinner div:nth-child(3) { animation-delay: 300ms; }
+
+.signup-form .formkit-submit[data-active] .formkit-spinner {
+  display: flex;
+}
+
+.signup-form .formkit-submit[data-active] > span {
+  opacity: 0;
+}
+
+@keyframes signup-pulse {
+  from { opacity: 0.35; transform: scale(0.75); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 .signup-form .formkit-submit:hover,
@@ -368,6 +402,10 @@ h1::after {
     opacity: 1;
     animation: none;
     transform: none;
+  }
+
+  .signup-form .formkit-spinner div {
+    animation: none;
   }
 }
 
