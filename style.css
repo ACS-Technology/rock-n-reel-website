@@ -317,6 +317,15 @@ h1::after {
   border-color: var(--pure-white);
 }
 
+.signup-form .seva-custom-content {
+  padding: 12px;
+  color: var(--muted-white);
+  font-size: 0.86rem;
+  line-height: 1.45;
+  text-align: center;
+  white-space: pre-line;
+}
+
 .signup-form .formkit-powered-by-convertkit-container {
   margin-top: 8px;
 }
