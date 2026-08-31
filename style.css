@@ -179,11 +179,9 @@ h1::after {
 }
 
 .signup {
-  position: absolute;
-  left: 50%;
-  bottom: -56px;
   width: min(calc(100% - 48px), 580px);
-  transform: translateX(-50%);
+  margin-top: clamp(40px, 6vh, 64px);
+  flex: 0 0 auto;
 }
 
 .signup h2 {
@@ -388,10 +386,8 @@ h1::after {
   .tagline { font-size: clamp(0.86rem, 4vw, 1.05rem); }
 
   .signup {
-    position: static;
     width: 100%;
     margin-top: 48px;
-    transform: none;
   }
 
   .signup-form .formkit-fields {
