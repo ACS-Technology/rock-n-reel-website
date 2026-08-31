@@ -339,6 +339,49 @@ h1::after {
   color: var(--pure-white);
 }
 
+.social-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 80px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px 28px;
+}
+
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--pure-white);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.instagram-icon {
+  width: 34px;
+  height: 34px;
+  overflow: visible;
+  color: var(--rock-red);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.instagram-icon-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
+.instagram-link:hover,
+.instagram-link:focus-visible {
+  color: var(--rock-red);
+  transform: translateY(-2px);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
