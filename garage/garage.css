@@ -1,0 +1,107 @@
+.garage-site {
+  --garage-ink: #0d1011;
+  --paper-upper: url("../assets/version-d-kit/archive-paper-top.svg");
+  --paper-lower: url("../assets/version-d-kit/archive-paper-bottom.svg");
+}
+
+.garage-site .interior { padding-block: clamp(30px, 5vw, 72px); }
+.garage-site .masthead nav { flex-wrap: nowrap; }
+.garage-site .masthead nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  white-space: nowrap;
+}
+.garage-site .back-link,
+.garage-site main .text-link { display: inline-flex; align-items: center; min-height: 44px; }
+.garage-site a:focus-visible { outline: 2px solid #087d8c; outline-offset: 4px; }
+
+.garage-site .garage-mast {
+  position: relative;
+  isolation: isolate;
+  padding: clamp(32px, 4vw, 56px) clamp(22px, 5vw, 68px);
+  color: #fff;
+  background: linear-gradient(to right, var(--garage-ink) 0 55%, transparent 55%);
+}
+.garage-mast::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 0 55%;
+  background: url("../assets/version-d-kit/hero-ink-edge.svg") center / 100% 100% no-repeat;
+}
+.garage-site .garage-mast em { color: var(--blue); }
+.garage-site .garage-mast p { max-width: 45ch; }
+.garage-site .garage-choice > div:first-child { padding: clamp(16px, 2.5vw, 26px); }
+.garage-site .garage-choice > span { padding: 12px clamp(16px, 2.5vw, 26px); }
+.garage-site .garage-choice .choice-photo,
+.garage-site .entry-photo { position: relative; background: var(--garage-ink); padding: 0; }
+.choice-photo::before,
+.entry-photo::before,
+.entry-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 17px;
+  background: var(--paper-upper) center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+.entry-photo::after { inset: auto 0 -1px; height: 19px; background-image: var(--paper-lower); }
+.choice-photo::before { height: 13px; }
+.garage-site .build-photo { margin-block: 30px; }
+.garage-site .build-photo::before { z-index: 1; }
+.garage-site .build-photo figcaption,
+.garage-site .build-photos figcaption { font-size: .875rem; color: #4b4b4b; margin-top: 8px; }
+.garage-site .build-photos img { border-radius: 0; }
+.garage-site .build-photos figure { padding-bottom: 8px; border-bottom: 2px solid #d9e6e7; }
+
+.garage-site .graph {
+  background-size: 28px 28px;
+  background-image: linear-gradient(#19b6c91a 1px, transparent 1px),
+                    linear-gradient(90deg, #19b6c91a 1px, transparent 1px);
+}
+.garage-site .timeline { border-left-color: #087d8c; }
+.garage-site .timeline-meta { font-size: .875rem; }
+.garage-site .timeline li > img { height: 100%; max-height: none; }
+.garage-site .garage-missing {
+  background: repeating-linear-gradient(#f1f6f6 0 23px, #e0ebec 23px 24px);
+  padding-inline: 8px;
+  text-align: center;
+}
+.garage-site .entry-header { margin-bottom: 28px; }
+.garage-site .entry-header .back-link { margin-bottom: 12px; }
+.garage-site .entry-header .article-meta { color: #414141; }
+.garage-site .article h1 { font-size: clamp(2.1rem, 5.7vw, 4.65rem); overflow-wrap: break-word; }
+.garage-site .article section p { max-width: 66ch; line-height: 1.7; }
+.garage-site .notebook {
+  background-image: repeating-linear-gradient(#fff 0 29px, #e7eff0 29px 30px);
+  border-color: #dae3e5;
+  border-left-color: var(--red);
+  box-shadow: 2px 4px 8px #17171712;
+}
+.garage-site .note-index article { padding: 18px clamp(16px, 3vw, 24px); }
+
+@media (max-width: 760px) {
+  .garage-site .garage-mast { background: var(--garage-ink); }
+  .garage-mast::before {
+    inset: 100% 0 auto;
+    height: 10px;
+    background-image: url("../assets/version-d-kit/hero-ink-mobile.svg");
+  }
+  .garage-site .garage-mast { margin-bottom: 42px; }
+}
+@media (max-width: 570px) {
+  .garage-site .masthead { gap: 8px; }
+  .garage-site .masthead nav { gap: 7px; }
+  .garage-site .masthead nav a { font-size: .74rem; }
+  .garage-site .timeline li > img { height: 150px; }
+  .garage-site .timeline .garage-missing { height: auto; min-height: 72px; }
+  .garage-site .entry-photo::after { height: 14px; }
+}
+@media (max-width: 360px) {
+  .garage-site .brand { width: 72px; }
+  .garage-site .masthead nav { gap: 4px; }
+  .garage-site .masthead nav a { font-size: .69rem; }
+}
