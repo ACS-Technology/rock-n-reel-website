@@ -1,7 +1,7 @@
 .garage-site {
   --garage-ink: #0d1011;
-  --paper-upper: url("../assets/version-d-kit/archive-paper-top.svg");
-  --paper-lower: url("../assets/version-d-kit/archive-paper-bottom.svg");
+  --paper-upper: url("../assets/site-art/archive-paper-top.svg");
+  --paper-lower: url("../assets/site-art/archive-paper-bottom.svg");
 }
 
 .garage-site .interior { padding-block: clamp(30px, 5vw, 72px); }
@@ -30,7 +30,7 @@
   position: absolute;
   z-index: -1;
   inset: 0 0 0 55%;
-  background: url("../assets/version-d-kit/hero-ink-edge.svg") center / 100% 100% no-repeat;
+  background: url("../assets/site-art/hero-ink-edge.svg") center / 100% 100% no-repeat;
 }
 .garage-site .garage-mast em { color: var(--blue); }
 .garage-site .garage-mast p { max-width: 45ch; }
@@ -88,7 +88,7 @@
   .garage-mast::before {
     inset: 100% 0 auto;
     height: 10px;
-    background-image: url("../assets/version-d-kit/hero-ink-mobile.svg");
+    background-image: url("../assets/site-art/hero-ink-mobile.svg");
   }
   .garage-site .garage-mast { margin-bottom: 42px; }
 }
