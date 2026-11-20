@@ -501,7 +501,7 @@ figcaption { color: var(--muted); margin-top: 12px; font-size: .88rem; }
  .timeline-copy { padding: 12px; }
 }
 
-/* Garage paper stock and display lettering from Version D. */
+/* Garage paper stock and display lettering. */
 .garage-site .masthead { border-bottom: 0; }
 .garage-site h1, .garage-site h2 { font-weight: 900; font-style: italic; letter-spacing: -.045em; }
 .garage-site .page-intro em { font-style: inherit; }
@@ -511,17 +511,17 @@ figcaption { color: var(--muted); margin-top: 12px; font-size: .88rem; }
 }
 .garage-site .garage-choice, .garage-site .note-index article, .garage-site .timeline li {
   position: relative; background: transparent; border: 0; border-radius: 0;
-  border-image: url("assets/version-d-kit/paper-white.png") 28 fill / 19px stretch;
+  border-image: url("assets/site-art/paper-white.png") 28 fill / 19px stretch;
   filter: drop-shadow(1px 3px 2px #17171725);
 }
 .garage-site .garage-choice { overflow: visible; padding: 10px; }
 .garage-site .garage-choice:first-child {
-  border-image-source: url("assets/version-d-kit/paper-blue.webp");
+  border-image-source: url("assets/site-art/paper-blue.webp");
 }
 .garage-site .garage-choice div { border: 0; }
 .garage-site .garage-choice::before, .garage-site .build-photo::before {
   content: ""; position: absolute; top: -10px; left: 22px; width: 105px; aspect-ratio: 403 / 96;
-  background: url("assets/version-d-kit/masking-tape-long-creased.webp") center / contain no-repeat;
+  background: url("assets/site-art/masking-tape-long-creased.webp") center / contain no-repeat;
   transform: rotate(-7deg); pointer-events: none;
 }
 .garage-site .notes-choice::before { left: auto; right: 20px; transform: rotate(5deg); }
@@ -533,13 +533,13 @@ figcaption { color: var(--muted); margin-top: 12px; font-size: .88rem; }
 .about-site .article {
   position: relative;
   padding: clamp(24px, 5vw, 64px);
-  border-image: url("assets/version-d-kit/paper-white.png") 28 fill / 20px stretch;
+  border-image: url("assets/site-art/paper-white.png") 28 fill / 20px stretch;
   filter: drop-shadow(1px 3px 2px #17171725);
 }
 .about-site .article::before {
   content: ""; position: absolute; top: -10px; left: 24px;
   width: 110px; aspect-ratio: 403 / 96; transform: rotate(-6deg);
-  background: url("assets/version-d-kit/masking-tape-long-creased.webp") center / contain no-repeat;
+  background: url("assets/site-art/masking-tape-long-creased.webp") center / contain no-repeat;
   pointer-events: none;
 }
 .about-site .article h1 { text-transform: uppercase; }

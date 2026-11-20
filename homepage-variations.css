@@ -180,7 +180,7 @@
   .punk-d .masthead nav a { font-size: .61rem; }
   .punk-d .card-copy { gap: 6px 10px; }
 }
-/* Version D finish assets. The underlying photo and logo files stay original. */
+/* Homepage photo and paper treatments. */
 .punk-d .masthead .brand img {
   mask: none;
 }
@@ -213,10 +213,10 @@
 .punk-d .home-cards .card { filter: drop-shadow(0 2px 1px #17171726) drop-shadow(2px 5px 5px #17171726); }
 .punk-d .card::after {
   width: 130px; height: auto; aspect-ratio: 403 / 96; top: -12px; left: 22px;
-  background: url("assets/version-d-kit/masking-tape-long-creased.webp") center / contain no-repeat;
+  background: url("assets/site-art/masking-tape-long-creased.webp") center / contain no-repeat;
   clip-path: none; opacity: 1; filter: none;
 }
-.punk-d .card.yellow::after { transform: rotate(-8deg); aspect-ratio: 405 / 137; background-image: url("assets/version-d-kit/tape-large-folded.webp"); }
+.punk-d .card.yellow::after { transform: rotate(-8deg); aspect-ratio: 405 / 137; background-image: url("assets/site-art/tape-large-folded.webp"); }
 @media(max-width: 760px) {
   .punk-d .full-guitar { margin-top: -10px; }
   .punk-d .card::after { width: 106px; }
@@ -228,20 +228,20 @@
   content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
   inset: auto; left: 50%; top: 50%; width: 32px; height: 115%;
   transform: translate(-50%, -50%) rotate(18deg);
-  background: url("assets/version-d-kit/dry-brush.svg") center / 100% 100% no-repeat;
+  background: url("assets/site-art/dry-brush.svg") center / 100% 100% no-repeat;
 }
 /* Mask the whole black stage so the hero shows through its upper torn contour. */
 .punk-d .full-guitar {
   isolation: isolate; width: 100%; background: #141819;
-  mask: url("assets/version-d-kit/contour-top.svg") top / 100% 22px no-repeat,
+  mask: url("assets/site-art/contour-top.svg") top / 100% 22px no-repeat,
         linear-gradient(#000 0 0) center / 100% calc(100% - 42px) no-repeat,
-        url("assets/version-d-kit/contour-bottom.svg") bottom / 100% 22px no-repeat;
+        url("assets/site-art/contour-bottom.svg") bottom / 100% 22px no-repeat;
 }
 .punk-d .full-guitar::before, .punk-d .full-guitar::after {
   content: ""; position: absolute; inset: 0 0 auto; height: 22px; z-index: 1;
-  pointer-events: none; background: url("assets/version-d-kit/pulp-top.svg") center / 100% 100% no-repeat;
+  pointer-events: none; background: url("assets/site-art/pulp-top.svg") center / 100% 100% no-repeat;
 }
-.punk-d .full-guitar::after { inset: auto 0 0; background-image: url("assets/version-d-kit/pulp-bottom.svg"); }
+.punk-d .full-guitar::after { inset: auto 0 0; background-image: url("assets/site-art/pulp-bottom.svg"); }
 .punk-d .full-guitar { padding-block: 20px 18px; }
 /* Nine-slice the paper to keep the ragged corners at their natural scale. */
 .punk-d .card.blue::before,
@@ -249,8 +249,8 @@
   background: none;
   border-image: var(--kit-paper) 28 fill / 22px stretch;
 }
-.punk-d .card.blue { --kit-paper: url("assets/version-d-kit/paper-blue.webp"); }
-.punk-d .card.yellow { --kit-paper: url("assets/version-d-kit/paper-white.png"); }
+.punk-d .card.blue { --kit-paper: url("assets/site-art/paper-blue.webp"); }
+.punk-d .card.yellow { --kit-paper: url("assets/site-art/paper-white.png"); }
 @media(max-width: 760px) {
   .punk-d .punk-hero::after { display: none; }
 }
@@ -263,7 +263,7 @@
 .main-home .hero-split {
   width: 100%; min-height: 520px; position: relative; overflow: hidden;
   display: flex; align-items: stretch; gap: 0; padding: 0;
-  background: #fff url("assets/version-d-kit/hero-ink-edge.svg") center / 100% 100% no-repeat;
+  background: #fff url("assets/site-art/hero-ink-edge.svg") center / 100% 100% no-repeat;
 }
 .main-home .hero-split::before, .main-home .hero-split::after,
 .main-home .hero h1::after { content: none; }
@@ -306,11 +306,11 @@
 }
 .main-home .paper-edge.upper {
   position: absolute; inset: 0 0 auto; height: 32px;
-  background: url("assets/version-d-kit/archive-paper-top.svg") center / 100% 100% no-repeat;
+  background: url("assets/site-art/archive-paper-top.svg") center / 100% 100% no-repeat;
 }
 .main-home .paper-edge.lower {
   position: absolute; bottom: -1px; left: 0; height: 32px;
-  background: url("assets/version-d-kit/archive-paper-bottom.svg") center / 100% 100% no-repeat;
+  background: url("assets/site-art/archive-paper-bottom.svg") center / 100% 100% no-repeat;
 }
 .main-home .full-guitar figcaption {
   position: absolute; bottom: 39px; left: 24px; z-index: 5;
@@ -334,7 +334,7 @@
 @media (max-width: 860px) {
   .main-home .hero-left::after {
     content: ""; position: absolute; inset: 100% 0 auto; height: 12px;
-    background: url("assets/version-d-kit/hero-ink-mobile.svg") center / 100% 100% no-repeat;
+    background: url("assets/site-art/hero-ink-mobile.svg") center / 100% 100% no-repeat;
     pointer-events: none;
   }
   .main-home .paper-edge.upper, .main-home .paper-edge.lower { height: 24px; }
